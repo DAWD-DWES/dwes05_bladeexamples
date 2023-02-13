@@ -64,4 +64,11 @@
 <strong>Ooooops</strong> Algo ha ido mal!
 @endcomponent
 @endif
-@endsection
+@endsection('script')
+
+
+@push('scripts')
+<script>
+    alert('I\'m coming from child');
+</script>
+@endpush
