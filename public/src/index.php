@@ -1,11 +1,11 @@
 <?php
 
-require "../vendor/autoload.php";
+require "../../vendor/autoload.php";
 
 use eftec\bladeone\BladeOne;
 
-$views = __DIR__ . '\..\views'; // it uses the folder /views to read the templates
-$cache = __DIR__ . '\..\cache'; // it uses the folder /cache to compile the result. 
+$views = __DIR__ . '\..\..\views'; // it uses the folder /views to read the templates
+$cache = __DIR__ . '\..\..\cache'; // it uses the folder /cache to compile the result. 
 
 $blade = new BladeOne($views, $cache);
 $blade->setBaseURL("http://{$_SERVER['SERVER_NAME']}:{$_SERVER['SERVER_PORT']}/");
@@ -17,8 +17,7 @@ $blade->addAssetDict('js/bootstrap.bundle.min.js','https://cdn.jsdelivr.net/npm/
 
 $persona = new stdClass();
 $persona->nombre = "Luis Rodríguez García";
-$persona->codigo = 32323;
-// $persona->codigo = null;
+$persona->codigo = 33232;
 $persona->edad = 42;
 
 $cursoFin1 = new stdClass();

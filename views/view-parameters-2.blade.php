@@ -63,7 +63,7 @@
                                 <td>{{ $curso->horas }}</td>
                             </tr>
                             @empty
-                        <h2>No hay Cursos Registrado</h2>
+                        <h2>No hay Cursos Registrados</h2>
                         @endforelse
                         @if (!empty ($cursos))
                         <tr>
