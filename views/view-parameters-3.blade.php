@@ -18,7 +18,6 @@
 <div class="card">
     <img src='@asset("assets/img/empleado.jpg")' class="card-img-top img-fluid img-thumbnail" alt="foto">
     <img src='@relative("assets/img/empleado.jpg")' class="card-img-top img-fluid img-thumbnail" alt="foto">
-    <img src='assets/img/empleado.jpg' class="card-img-top img-fluid img-thumbnail" alt="foto">
     <div class="card-body">
         <ul class="list-group list-group-flush">
             <li class="list-group-item">Código: {{ $persona->codigo or 'Sin Código' }}</li>

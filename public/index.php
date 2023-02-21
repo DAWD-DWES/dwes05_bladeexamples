@@ -11,9 +11,9 @@ $blade = new BladeOne($views, $cache);
 $blade->setBaseURL("http://{$_SERVER['SERVER_NAME']}:{$_SERVER['SERVER_PORT']}/");
 $blade->pipeEnable = true;
 
-$blade->addAssetDict('js/bootstrap.bundle.min.js','https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js');
+$blade->addAssetDict('js/bootstrap.bundle.min.js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js');
 
-//echo $blade->run('view');
+echo $blade->run('view');
 
 $persona = new stdClass();
 $persona->nombre = "Luis Rodríguez García";
@@ -38,7 +38,7 @@ $cursos = [$cursoFin1, $cursoCon1, $cursoCon2];
 // $cursos = [];
 // echo $blade->run('view-parameters', compact('persona', 'cursos'));
 // echo $blade->run('view-parameters-2', compact('persona', 'cursos'));
-$error = false;
-echo $blade->run('view-parameters-3', compact('persona', 'cursos', 'error'));
+// $error = false;
+// echo $blade->run('view-parameters-3', compact('persona', 'cursos', 'error'));
 
 
