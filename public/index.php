@@ -13,7 +13,8 @@ $blade->pipeEnable = true;
 
 $blade->addAssetDict('js/bootstrap.bundle.min.js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js');
 
-echo $blade->run('view');
+//echo $blade->run('view');
+//die();
 
 $persona = new stdClass();
 $persona->nombre = "Luis Rodríguez García";
@@ -36,9 +37,10 @@ $cursoCon2->horas = 180;
 $cursos = [$cursoFin1, $cursoCon1, $cursoCon2];
 
 // $cursos = [];
+// echo $blade->run('view-parameters', ['persona' => $persona, 'cursos' => $cursos]);
 // echo $blade->run('view-parameters', compact('persona', 'cursos'));
 // echo $blade->run('view-parameters-2', compact('persona', 'cursos'));
-// $error = false;
-// echo $blade->run('view-parameters-3', compact('persona', 'cursos', 'error'));
+ $error = false;
+ echo $blade->run('view-parameters-3', compact('persona', 'cursos', 'error'));
 
 

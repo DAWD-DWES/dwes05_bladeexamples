@@ -4,7 +4,6 @@
 @section('title', 'Ficha Empleado')
 
 @section('enlaces')
-@parent
 <li class="nav-item">
     <a class="nav-link" href="#">Enlace 2</a>
 </li>
@@ -63,7 +62,7 @@
 <strong>Ooooops</strong> Algo ha ido mal!
 @endcomponent
 @endif
-@endsection('script')
+@endsection('alerta')
 
 
 @push('scripts')
